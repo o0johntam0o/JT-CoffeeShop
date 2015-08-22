@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F10B7EA5-8AA8-4B26-B6FF-A0F546AFE9CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>JT_CoffeeShop.My.MyApplication</StartupObject>
+    <RootNamespace>JT_CoffeeShop</RootNamespace>
+    <AssemblyName>[JT] CoffeeShop</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>[JT] CoffeeShop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>[JT] CoffeeShop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_Tables.vb" />
+    <Compile Include="Class_Bills.vb" />
+    <Compile Include="Class_DB.vb" />
+    <Compile Include="Class_GTables.vb" />
+    <Compile Include="Class_GItems.vb" />
+    <Compile Include="Class_Waiters.vb" />
+    <Compile Include="Class_Tickets.vb" />
+    <Compile Include="Class_Items.vb" />
+    <Compile Include="Form_Main.Designer.vb">
+      <DependentUpon>Form_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UC_Login.Designer.vb">
+      <DependentUpon>UC_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Login.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Main.Designer.vb">
+      <DependentUpon>UC_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Main.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ManagerTables.Designer.vb">
+      <DependentUpon>UC_ManagerTables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ManagerTables.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ManagerBills.Designer.vb">
+      <DependentUpon>UC_ManagerBills.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ManagerBills.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ManagerItems.Designer.vb">
+      <DependentUpon>UC_ManagerItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ManagerItems.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ManagerWaiters.Designer.vb">
+      <DependentUpon>UC_ManagerWaiters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ManagerWaiters.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ManagerGTables.Designer.vb">
+      <DependentUpon>UC_ManagerGTables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ManagerGTables.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ManagerGItems.Designer.vb">
+      <DependentUpon>UC_ManagerGItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ManagerGItems.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Login.resx">
+      <DependentUpon>UC_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Main.resx">
+      <DependentUpon>UC_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ManagerTables.resx">
+      <DependentUpon>UC_ManagerTables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ManagerBills.resx">
+      <DependentUpon>UC_ManagerBills.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ManagerItems.resx">
+      <DependentUpon>UC_ManagerItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ManagerWaiters.resx">
+      <DependentUpon>UC_ManagerWaiters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ManagerGTables.resx">
+      <DependentUpon>UC_ManagerGTables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ManagerGItems.resx">
+      <DependentUpon>UC_ManagerGItems.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cup_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_System.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
